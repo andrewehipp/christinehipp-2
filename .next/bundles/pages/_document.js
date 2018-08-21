@@ -1818,30 +1818,46 @@ function (_Document) {
           fileName: _jsxFileName,
           lineNumber: 21
         }
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("body", {
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("meta", {
+        property: "og:type",
+        content: "website",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 23
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Container__["a" /* default */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_document__["Main"], {
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("link", {
+        rel: "icon",
+        type: "image/png",
+        href: "stateoc/img/meta/favicon.ico",
+        sizes: "32x32",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25
         }
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_Footer__["a" /* default */], {
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("body", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Container__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 28
         }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_document__["Main"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        }
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_Footer__["a" /* default */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        }
       }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_document__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 34
         }
       })));
     }

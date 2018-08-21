@@ -19,6 +19,10 @@ export default class MyDocument extends Document {
                     </title>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
                     <link rel="stylesheet" href="/_next/static/style.css" />
+
+                    <meta property="og:type" content="website" />
+
+                    <link rel="icon" type="image/png" href="stateoc/img/meta/favicon.ico" sizes="32x32" />
                 </Head>
                 <body>
                     <Container>
