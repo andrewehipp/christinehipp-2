@@ -352,6 +352,9 @@ var Header = function Header(_ref) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__page_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__page_scss__);
 var _jsxFileName = "/Users/andrewhipp/Sites/christinehipp-2/components/Page/index.jsx";
 
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
 
 
 
@@ -363,19 +366,19 @@ var Page = function Page(props) {
       fileName: _jsxFileName,
       lineNumber: 9
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Aspect__["a" /* default */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Filters_context__["a" /* Consumer */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Filters_context__["a" /* Consumer */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    }
   }, function (_ref) {
     var filter = _ref.filter;
-    return props[filter] ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("picture", {
+    return props[filter] ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Aspect__["a" /* default */], _extends({}, props[filter].file.details.image, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      }
+    }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("picture", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 14
@@ -394,8 +397,8 @@ var Page = function Page(props) {
         fileName: _jsxFileName,
         lineNumber: 16
       }
-    })) : null;
-  })));
+    }))) : null;
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Page);
