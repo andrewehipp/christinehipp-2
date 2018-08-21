@@ -25,11 +25,7 @@ export default class MyDocument extends Document {
                     <link rel="icon" type="image/png" href="stateoc/img/meta/favicon.ico" sizes="32x32" />
                 </Head>
                 <body>
-                    <Container>
-                        <Main />
-                    </Container>
-
-                    <Footer />
+                    <Main />
 
                     <NextScript />
                 </body>

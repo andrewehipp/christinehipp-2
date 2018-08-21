@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Header from '../components/Header';
+import Container from '../components/Container';
+import Footer from '../components/Footer';
 import Page from '../components/Page';
 import Filters from '../components/Filters';
 import { FiltersProvider } from '../components/Filters/context.js';
@@ -14,7 +16,7 @@ const Project = ({ url }) => {
     } = url.query;
 
     return (
-        <div>
+        <Container>
             <Header menu={menu} />
 
             <FiltersProvider>
@@ -24,7 +26,9 @@ const Project = ({ url }) => {
                     <Page key={page.name} {...page} />
                 ))}
             </FiltersProvider>
-        </div>
+
+            <Footer />
+        </Container>
     );
 };
 

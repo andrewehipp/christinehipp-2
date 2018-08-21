@@ -1,7 +1,9 @@
 import React from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
 
 import Header from '../components/Header';
+import Container from '../components/Container';
+import Footer from '../components/Footer';
 import Filters from '../components/Filters';
 import Page from '../components/Page';
 import { FiltersProvider } from '../components/Filters/context.js';
@@ -29,18 +31,22 @@ const Collection = ({ url, pathname }) => {
                 <meta property="og:image" content={`${metaImageSrc.file.url}?fit=fill&f=top&w=1200&h=1200`} />
             </Head>
 
-            <Header menu={menu} />
+            <Container>
+                <Header menu={menu} />
 
-            <FiltersProvider>
-                <Filters />
-                {collection.content.map((c, cIndex) => (
-                    <section key={`${cIndex}-${c.name}`}>
-                        {c.pages.map((page, pageIndex) => (
-                            <Page key={`${cIndex}-${pageIndex}-${page.name}`} {...page} />
-                        ))}
-                    </section>
-                ))}
-            </FiltersProvider>
+                <FiltersProvider>
+                    <Filters />
+                    {collection.content.map((c, cIndex) => (
+                        <section key={`${cIndex}-${c.name}`}>
+                            {c.pages.map((page, pageIndex) => (
+                                <Page key={`${cIndex}-${pageIndex}-${page.name}`} {...page} />
+                            ))}
+                        </section>
+                    ))}
+                </FiltersProvider>
+            </Container>
+
+            <Footer />
         </div>
     );
 };

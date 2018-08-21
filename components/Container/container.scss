@@ -14,8 +14,8 @@ $container-padding:       20px;
 // instance of itself.
 //
 .container {
-    padding: 0 20px;
+    padding: 0 $container-padding;
     margin: 0 auto;
     width: 100%;
-    max-width: 1280px;
+    max-width: $container-padding + $container-width + $container-padding;
 }
