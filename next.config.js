@@ -31,7 +31,7 @@ module.exports = withSass({
             .then(res => res.items.map(item => item.fields))
             .then(res => res.map(collection => ({
                 ...collection,
-                collection: collection.collection.map(item => ({
+                content: collection.content.map(item => ({
                     ...item.fields,
                     pages: item.fields.pages
                         .map(page => page.fields)
