@@ -7,7 +7,8 @@ import css from './page.scss';
 
 const Page = props => (
     <div className={css.page}>
-        <Aspect {...props.pencils.file.details.image}>
+        <pre>{JSON.stringify(props, 4, 4)}</pre>
+        {/* <Aspect {...props.pencils.file.details.image}>
             <Consumer>
                 {({ filter }) => (
                     <picture>
@@ -16,7 +17,7 @@ const Page = props => (
                     </picture>
                 )}
             </Consumer>
-        </Aspect>
+        </Aspect> */}
     </div>
 );
 
