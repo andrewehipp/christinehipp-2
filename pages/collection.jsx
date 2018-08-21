@@ -14,6 +14,10 @@ const Collection = ({ url, pathname }) => {
         menu,
     } = url.query;
 
+    const metaImageSrc = collection.content[0].pages[0].fullColor
+        || collection.content[0].pages[0].ink
+        || collection.content[0].pages[0].pencil;
+
     return (
         <div>
             <Head>
@@ -23,7 +27,7 @@ const Collection = ({ url, pathname }) => {
                 <meta name="description" content="" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content={`http://christinehipp.com${pathname}`} />
-                <meta property="og:image" content="" />
+                <meta property="og:image" content={`${metaImageSrc.file.url}?fit=fill&f=top&w=1200&h=1200`} />
 
                 <link rel="icon" type="image/png" href="stateoc/img/meta/favicon.ico" sizes="32x32" />
             </Head>
