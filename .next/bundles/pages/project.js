@@ -47,7 +47,7 @@ var Aspect = function Aspect(_ref) {
   }), children);
 };
 
-/* unused harmony default export */ var _unused_webpack_default_export = (Aspect);
+/* harmony default export */ __webpack_exports__["a"] = (Aspect);
 
 /***/ }),
 
@@ -363,12 +363,39 @@ var Page = function Page(props) {
       fileName: _jsxFileName,
       lineNumber: 9
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("pre", {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Aspect__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     }
-  }, JSON.stringify(props, 4, 4)));
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Filters_context__["a" /* Consumer */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    }
+  }, function (_ref) {
+    var filter = _ref.filter;
+    return props[filter] ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("picture", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      }
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("source", {
+      srcSet: "".concat(props[filter].file.url, "?w=850&fm=webp"),
+      type: "image/webp",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      }
+    }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+      src: "".concat(props[filter].file.url, "?w=850"),
+      alt: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      }
+    })) : null;
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Page);

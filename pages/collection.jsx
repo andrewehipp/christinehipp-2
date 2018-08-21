@@ -19,7 +19,6 @@ const Collection = ({ url }) => {
 
             <FiltersProvider>
                 <Filters />
-
                 {collection.collection.map(c => (
                     <section key={c.name}>
                         {c.pages.map(page => (

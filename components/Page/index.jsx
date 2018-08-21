@@ -7,17 +7,18 @@ import css from './page.scss';
 
 const Page = props => (
     <div className={css.page}>
-        <pre>{JSON.stringify(props, 4, 4)}</pre>
-        {/* <Aspect {...props.pencils.file.details.image}>
+        <Aspect>
             <Consumer>
                 {({ filter }) => (
-                    <picture>
-                        <source srcSet={`${props[filter].file.url}?w=850&fm=webp`} type="image/webp" />
-                        <img src={`${props[filter].file.url}?w=850`} alt="" />
-                    </picture>
+                    props[filter] ? (
+                        <picture>
+                            <source srcSet={`${props[filter].file.url}?w=850&fm=webp`} type="image/webp" />
+                            <img src={`${props[filter].file.url}?w=850`} alt="" />
+                        </picture>
+                    ) : null
                 )}
             </Consumer>
-        </Aspect> */}
+        </Aspect>
     </div>
 );
 
