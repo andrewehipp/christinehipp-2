@@ -67,30 +67,58 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 13);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./components/Container/container.scss":
+/******/ ([
+/* 0 */
 /***/ (function(module, exports) {
 
-module.exports = {
-	"container": "_3tY9rtttiQtBXwzfDRTrHI"
-};
+module.exports = require("react");
 
 /***/ }),
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ "./components/Container/index.jsx":
+module.exports = __webpack_require__(14);
+
+
+/***/ }),
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__container_scss__ = __webpack_require__("./components/Container/container.scss");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__container_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__container_scss__);
-var _jsxFileName = "/Users/andrewhipp/Sites/christinehipp-2/components/Container/index.jsx";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
+// EXTERNAL MODULE: external "@babel/runtime/regenerator"
+var regenerator_ = __webpack_require__(15);
+var regenerator__default = /*#__PURE__*/__webpack_require__.n(regenerator_);
+
+// EXTERNAL MODULE: external "react"
+var external__react_ = __webpack_require__(0);
+var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
+
+// EXTERNAL MODULE: external "next/document"
+var document_ = __webpack_require__(16);
+var document__default = /*#__PURE__*/__webpack_require__.n(document_);
+
+// EXTERNAL MODULE: ./components/Container/container.scss
+var container = __webpack_require__(17);
+var container_default = /*#__PURE__*/__webpack_require__.n(container);
+
+// CONCATENATED MODULE: ./components/Container/index.jsx
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
@@ -98,88 +126,36 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 
 
-var Container = function Container(_ref) {
+var Container_Container = function Container(_ref) {
   var children = _ref.children,
       props = _objectWithoutProperties(_ref, ["children"]);
 
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", _extends({
-    className: __WEBPACK_IMPORTED_MODULE_1__container_scss___default.a.container
-  }, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }), children);
+  return external__react__default.a.createElement("div", _extends({
+    className: container_default.a.container
+  }, props), children);
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (Container);
+/* harmony default export */ var components_Container = (Container_Container);
+// EXTERNAL MODULE: ./components/Footer/footer.scss
+var footer = __webpack_require__(18);
+var footer_default = /*#__PURE__*/__webpack_require__.n(footer);
 
-/***/ }),
+// CONCATENATED MODULE: ./components/Footer/index.jsx
 
-/***/ "./components/Footer/footer.scss":
-/***/ (function(module, exports) {
 
-module.exports = {
-	"footer": "_1DvilgY_RNLx9YjM_pHwv4"
+
+
+var Footer_Footer = function Footer() {
+  return external__react__default.a.createElement("footer", {
+    className: footer_default.a.footer,
+    role: "contentinfo"
+  }, external__react__default.a.createElement(components_Container, null, external__react__default.a.createElement("p", null, "\xA9 Christine Hipp ", new Date().getFullYear())));
 };
 
-/***/ }),
+/* harmony default export */ var components_Footer = (Footer_Footer);
+// CONCATENATED MODULE: ./pages/_document.jsx
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _document_MyDocument; });
 
-/***/ "./components/Footer/index.jsx":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Container__ = __webpack_require__("./components/Container/index.jsx");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__footer_scss__ = __webpack_require__("./components/Footer/footer.scss");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__footer_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__footer_scss__);
-var _jsxFileName = "/Users/andrewhipp/Sites/christinehipp-2/components/Footer/index.jsx";
-
-
-
-
-var Footer = function Footer() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("footer", {
-    className: __WEBPACK_IMPORTED_MODULE_2__footer_scss___default.a.footer,
-    role: "contentinfo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Container__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    }
-  }, "\xA9 Christine Hipp ", new Date().getFullYear())));
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Footer);
-
-/***/ }),
-
-/***/ "./pages/_document.jsx":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MyDocument; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__ = __webpack_require__("@babel/runtime/regenerator");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_document__ = __webpack_require__("next/document");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_document___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_document__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Container__ = __webpack_require__("./components/Container/index.jsx");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Footer__ = __webpack_require__("./components/Footer/index.jsx");
-
-var _jsxFileName = "/Users/andrewhipp/Sites/christinehipp-2/pages/_document.jsx";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -206,7 +182,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var MyDocument =
+var _document_MyDocument =
 /*#__PURE__*/
 function (_Document) {
   _inherits(MyDocument, _Document);
@@ -220,76 +196,29 @@ function (_Document) {
   _createClass(MyDocument, [{
     key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("html", {
-        lang: "en",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_document__["Head"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("title", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        }
-      }, "Christine Hipp - Comic Artist"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("link", {
+      return external__react__default.a.createElement("html", {
+        lang: "en"
+      }, external__react__default.a.createElement(document_["Head"], null, external__react__default.a.createElement("title", null, "Christine Hipp - Comic Artist"), external__react__default.a.createElement("link", {
         rel: "stylesheet",
-        href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        }
-      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("link", {
+        href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      }), external__react__default.a.createElement("link", {
         rel: "stylesheet",
-        href: "/_next/static/style.css",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        }
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("body", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 23
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Container__["a" /* default */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_document__["Main"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25
-        }
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_Footer__["a" /* default */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        }
-      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_document__["NextScript"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        }
-      })));
+        href: "/_next/static/style.css"
+      })), external__react__default.a.createElement("body", null, external__react__default.a.createElement(components_Container, null, external__react__default.a.createElement(document_["Main"], null)), external__react__default.a.createElement(components_Footer, null), external__react__default.a.createElement(document_["NextScript"], null)));
     }
   }], [{
     key: "getInitialProps",
     value: function () {
       var _getInitialProps = _asyncToGenerator(
       /*#__PURE__*/
-      __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function _callee(ctx) {
+      regenerator__default.a.mark(function _callee(ctx) {
         var initialProps;
-        return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+        return regenerator__default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return __WEBPACK_IMPORTED_MODULE_2_next_document___default.a.getInitialProps(ctx);
+                return document__default.a.getInitialProps(ctx);
 
               case 2:
                 initialProps = _context.sent;
@@ -310,40 +239,37 @@ function (_Document) {
   }]);
 
   return MyDocument;
-}(__WEBPACK_IMPORTED_MODULE_2_next_document___default.a);
+}(document__default.a);
 
 
 
 /***/ }),
-
-/***/ 0:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("./pages/_document.jsx");
-
-
-/***/ }),
-
-/***/ "@babel/runtime/regenerator":
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/regenerator");
 
 /***/ }),
-
-/***/ "next/document":
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports = require("next/document");
 
 /***/ }),
-
-/***/ "react":
+/* 17 */
 /***/ (function(module, exports) {
 
-module.exports = require("react");
+module.exports = {
+	"container": "_3tY9rtttiQtBXwzfDRTrHI"
+};
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"footer": "_1DvilgY_RNLx9YjM_pHwv4"
+};
 
 /***/ })
-
-/******/ });
-//# sourceMappingURL=_document.js.map
+/******/ ]);
