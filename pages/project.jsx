@@ -16,19 +16,22 @@ const Project = ({ url }) => {
     } = url.query;
 
     return (
-        <Container>
-            <Header menu={menu} />
+        <div>
+            <Container>
+                <Header menu={menu} />
 
-            <FiltersProvider>
-                <Filters />
+                <FiltersProvider>
+                    <Filters />
 
-                {project.pages.map(page => (
-                    <Page key={page.name} {...page} />
-                ))}
-            </FiltersProvider>
+                    {project.pages.map(page => (
+                        <Page key={page.name} {...page} />
+                    ))}
+                </FiltersProvider>
+
+            </Container>
 
             <Footer />
-        </Container>
+        </div>
     );
 };
 
