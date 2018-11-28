@@ -5,11 +5,16 @@ import { filters, Consumer } from './context.js';
 
 import css from './filters.scss';
 
-const Filters = () => (
+const Filters = ({ inks, fullColor, pencils }) => (
     <Consumer>
         {({ filter, setFilter }) => (
             <ul className={css.filters}>
                 {filters.map((f, filterIndex) => {
+
+                    if (!filters[f.value]) {
+                        return null;
+                    }
+
                     const handleClick = () => {
                         setFilter(filterIndex);
                     };

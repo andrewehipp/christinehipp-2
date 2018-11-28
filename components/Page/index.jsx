@@ -12,8 +12,8 @@ const Page = props => (
                 props[filter] ? (
                     <Aspect {...props[filter].file.details.image}>
                         <picture>
-                            <source srcSet={`${props[filter].file.url}?w=850&fm=webp`} type="image/webp" />
-                            <img src={`${props[filter].file.url}?w=850`} alt="" />
+                            <source srcSet={`https:${props[filter].file.url}?w=850&fm=webp`} type="image/webp" />
+                            <img src={`https:${props[filter].file.url}?w=850`} alt="" />
                         </picture>
                     </Aspect>
                 ) : null

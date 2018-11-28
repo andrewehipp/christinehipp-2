@@ -37,9 +37,9 @@ module.exports = withSass({
                         .map(page => page.fields)
                         .map(page => ({
                             ...page,
-                            pencils: page.pencils.fields || false,
-                            inks: page.inks.fields || false,
-                            fullColor: page.fullColor.fields || false,
+                            pencils: page.pencils ? page.pencils.fields : false,
+                            inks: page.inks ? page.inks.fields : false,
+                            fullColor: page.fullColor ? page.fullColor.fields : false,
                         })),
                 })),
             })));
@@ -67,9 +67,9 @@ module.exports = withSass({
                     .map(page => page.fields)
                     .map(page => ({
                         ...page,
-                        pencils: page.pencils.fields || false,
-                        inks: page.inks.fields || false,
-                        fullColor: page.fullColor.fields || false,
+                        pencils: page.pencils ? page.pencils.fields : false,
+                        inks: page.inks ? page.inks.fields : false,
+                        fullColor: page.fullColor ? page.fullColor.fields : false,
                     })),
             })));
             // .then(res => res.map(item => ({
